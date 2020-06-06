@@ -14,12 +14,13 @@ class Pokemon
        VALUES (?, ?)
      SQL
 
-     DB.execute(sql, name, type)
+     db.execute(sql, name, type)
   end
 
   def self.find(id, db)
     sql = <<-SQL
-      SELECT * FROM pokemon WHERE id = (?)
+      SELECT * FROM pokemon
+      WHERE id = ?
     SQL
 
     pokemon = db.execute(sql, id)
