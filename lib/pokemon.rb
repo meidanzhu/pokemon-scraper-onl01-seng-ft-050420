@@ -23,4 +23,4 @@ class Pokemon
 #     type = pokemon[1]
 #     Pokemon.new(id: id, name: name, type: type, db: db)
 #   end
-# end
+end
